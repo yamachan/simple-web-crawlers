@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+.env.local
+
+npm-debug.log*
+
+# output files
+list-*.nedb
+list-*.json
