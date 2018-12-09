@@ -37,13 +37,14 @@ const db = new nedb_promise({
 		if (ret.error || !ret.response || ret.response.statusCode !== 200) {
 			console.log('ERROR:' + url);
 			return;
+		} else {
+			let items = ret.$(list_item_query);
+			number_of_items = items.length;
+			processListItems(ret, items, page);
+			count_of_items += number_of_items;
+			console.log('number_of_items = ' + number_of_items);
+			page++;
 		}
-		let items = ret.$(list_item_query);
-		number_of_items = items.length;
-		processListItems(ret, items, page);
-		count_of_items += number_of_items;
-		console.log('number_of_items = ' + number_of_items);
-		page++;
 	} while (number_of_items > 0);
 	console.log('count_of_items = ' + count_of_items);
 })();
