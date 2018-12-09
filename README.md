@@ -30,3 +30,5 @@ This is a (a little bit) useful tool to convert a nedb file to a json file. The 
 node nedb2json list-ibm-patterns.nedb > list-ibm-patterns.json
 node nedb2json list-ibmjp-patterns.nedb > list-ibmjp-patterns.json
 ```
+
+I upload these \*.json files to this GitHUB repository as a sample data. But maybe, it becomes old, and you should run each tools by yourself to get the newest data.
