@@ -3,7 +3,7 @@ const nedb = require('nedb');
 const nedb_promise = require('nedb-promise');
 
 if (process.argv.length !== 2) {
-	console.log('list-ibmjp-patterns.js');
+	console.log('list-ibm-patterns.js');
 	console.log('  Simple crawler tool to list patterns from IBM Code patterns site.');
 	console.log('  2018/11/24 by github.com/yamachan');
 	return;
@@ -53,6 +53,7 @@ function itemToObject(_ret, _item) {
 	return {
 		title: _ret.$('h3', _item).text().trim(),
 		url: _ret.$('a.ibm--card__block_link', _item).url(),
+		date: _ret.$('.ibm--card__date', _item).text().trim(),
 		tech: _ret.$('span.bx--tag--category', _item).map(function(){
 			return _ret.$(this).text().trim()
 		}).get().sort()
@@ -63,6 +64,7 @@ function checkUpdateObject(_obj, _doc) {
 	return JSON.stringify(_obj) !== JSON.stringify({
 		title: _doc.title,
 		url: _doc.url,
+		date: _doc.date,
 		tech: _doc.tech
 	});
 }
