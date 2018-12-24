@@ -32,8 +32,10 @@ setKey(list_jp);
 // ----- Quick fix -----
 
 quick_fix = {
-	"analyze-starcraft-ii-replays-jupyter-notebooks":"analyze-starcraft-ii-replays-with-jupyter-notebooks",
-	"apply-cognitive-mobile-images-go":"apply-cognitive-to-mobile-images-on-the-go",
+	// 1st fix
+	//"analyze-starcraft-ii-replays-jupyter-notebooks":"analyze-starcraft-ii-replays-with-jupyter-notebooks",
+	//"apply-cognitive-mobile-images-go":"apply-cognitive-to-mobile-images-on-the-go",
+	// 2nd fix
 	"blockchain-donation-tracking":"track-donations-blockchain",
 	"build-a-cognitive-recommendation-app-with-swift-2":"build-a-cognitive-recommendation-app-with-swift",
 	"build-blockchain-network":"build-a-blockchain-network",
