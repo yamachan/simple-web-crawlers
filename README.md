@@ -22,6 +22,12 @@ This is almost same as 'list-ibm-patterns' tool. But the target site is changed 
 
 * [IBM Developer Japan: Code Patterns](https://developer.ibm.com/jp/patterns/)
 
+# Optional tools
+
+## nedb_open
+
+This is a simple tool to count # of items in a specific nedb file. You can use this to compact a nedb file.
+
 ## nedb2json
 
 This is a (a little bit) useful tool to convert a nedb file to a json file. The following is a sample:
@@ -32,3 +38,12 @@ node nedb2json list-ibmjp-patterns.nedb > list-ibmjp-patterns.json
 ```
 
 I upload these \*.json files to this GitHUB repository as a sample data. But maybe, it becomes old, and you should run each tools by yourself to get the newest data.
+
+## nedb2csv
+
+This is a (a little bit) useful tool to convert a nedb file to a csv file. The following is a sample:
+
+```
+node nedb2jcsv list-ibm-patterns.nedb > list-ibm-patterns.csv
+node nedb2jcsv list-ibmjp-patterns.nedb > list-ibmjp-patterns.csv
+```

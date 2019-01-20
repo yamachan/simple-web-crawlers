@@ -5,7 +5,7 @@ const nedb_promise = require('nedb-promise');
 if (process.argv.length !== 2) {
 	console.log('list-ibmjp-dw.js');
 	console.log('  Simple crawler tool to list patterns from IBM developerWorks JP site.');
-	console.log('  2018/12/24 by github.com/yamachan');
+	console.log('  2019/01/20 by github.com/yamachan');
 	return;
 }
 

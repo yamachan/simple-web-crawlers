@@ -3,8 +3,9 @@ const nedb_promise = require('nedb-promise');
 
 if (process.argv.length !== 3 || process.argv[2].startsWith('-')) {
 	console.log('nedb2csv.js');
-	console.log('  Convert a nedb file to a json file.');
+	console.log('  Convert a nedb file to a csv file.');
 	console.log('  2018/12/24 by github.com/yamachan\n');
+	console.log('  node nedb2csv list-ibm-patterns.nedb > list-ibm-patterns.csv');
 	console.log('  node nedb2csv list-ibmjp-patterns.nedb > list-ibmjp-patterns.csv');
 	return;
 }
